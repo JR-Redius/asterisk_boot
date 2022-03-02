@@ -1,7 +1,7 @@
 from botMainFunctions import getSearchNumber, getListUser, getCreateNewUser, getDeleteUser
 
 
-#query = input('1 - search, 2-create, 3-delete: ')
+query = input('1 - search, 2-create, 3-delete: ')
 
 # Создание нового пользователя
 
@@ -66,11 +66,11 @@ def getDelete():
     if len(number) == 4:
         getDeleteUser(number)
 
-# if query == '1':
-#     getSearch()
-# elif query == '2':
-#     getCreate()
-# elif query == '3':
-#     getDelete()
-# else:
-#     print('Неверный выбор')
+if query == '1':
+    getSearch(input('Введите запрос = '))
+elif query == '2':
+    getCreate()
+elif query == '3':
+    getDelete()
+else:
+    print('Неверный выбор')
